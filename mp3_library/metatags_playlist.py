@@ -7,7 +7,7 @@ import os
 from variables import file_path_cache, file_path_audio, playlist_path
 
 
-files = glob.glob(file_path_audio+'/*')
+files = glob.glob(file_path_audio+'/*.mp3')
 files.sort()
 
 tag = id3.Tag()
