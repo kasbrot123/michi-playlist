@@ -1,0 +1,24 @@
+services:
+    michi-playlist:
+      image: michi-playlist:1.0
+      container_name: michi-playlist
+      networks:
+          - mynetwork
+      environment:
+          - PUID=1000
+          - PGID=1000
+      volumes:
+          - ./html:/var/www/html
+      ports:
+          - 4000:80
+      restart: unless-stopped
+      # user: "1000:1000"
+
+
+
+networks:
+    mynetwork:
+        name: my-net
+        # change this to false if you do not have a reverse proxy
+        external: true
+        # external: false
