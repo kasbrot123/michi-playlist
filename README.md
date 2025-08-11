@@ -8,6 +8,14 @@ myself instead of using a pre existing one. It has basic audio player
 functionalities and comes with a download feature to auto tag the MP3 files
 with title/artist name/album name and cover.
 
+Core features:
+
+- Basic MP3 Web Player in HTML and Javascript
+- Session Navigator for Play/Pause/Skip/Previous
+- MP3 download via YouTube url
+- Metadata of song gets added automatically
+- Docker image
+
 
 ## Deploy / Install
 
